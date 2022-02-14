@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App Lanchonete</string>
+    <string name="textViewCardapio">Cardápio</string>
+    <string name="textViewCafe">Café</string>
+    <string name="textViewBolo">Bolo</string>
+    <string name="textViewHamburguer">Hambúrguer</string>
+    <string name="textViewPizza">Pizza</string>
+    <string name="BtnFinalizar">Finalizar</string>
+    <string name="textViewUnidadeCafe">Valor da Unidade: R$ 4,00</string>
+    <string name="EditTextDigiteQuantidade">Digite a Quantidade</string>
+    <string name="btnCalcular">Calcular</string>
+</resources>
