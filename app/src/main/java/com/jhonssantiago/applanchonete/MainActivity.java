@@ -28,34 +28,30 @@ public class MainActivity extends AppCompatActivity {
 
         Intent it = getIntent();
         if(it!=null){
-            double c = it.getDoubleExtra("totalCafe", 0);
-            double p = it.getDoubleExtra("totalPizza", 0);
-            double b = it.getDoubleExtra("totalBolo", 0);
-            double h = it.getDoubleExtra("totalHamb", 0);
+            double c = it.getDoubleExtra("total", 0);
             valores = valores+c;
-            valores = valores+p;
-            valores = valores+b;
-            valores = valores+h;
-
         }
-
     }
 
     public void clicar(View view) {
         if(view.getId() == R.id.imgBolo){
             Intent it = new Intent(getApplicationContext(), BoloActivity.class);
+            it.putExtra("valor", valores);
             startActivity(it);
         }
         if(view.getId() == R.id.imgCafe){
             Intent it = new Intent(getApplicationContext(), CafeActivity.class);
+            it.putExtra("valor", valores);
             startActivity(it);
         }
         if(view.getId() == R.id.imgHamburguer){
             Intent it = new Intent(getApplicationContext(), HamburguerActivity.class);
+            it.putExtra("valor", valores);
             startActivity(it);
         }
         if(view.getId() == R.id.imgPizza){
             Intent it = new Intent(getApplicationContext(), PizzaActivity.class);
+            it.putExtra("valor", valores);
             startActivity(it);
         }
         if(view.getId() == R.id.btnFinalizar){
