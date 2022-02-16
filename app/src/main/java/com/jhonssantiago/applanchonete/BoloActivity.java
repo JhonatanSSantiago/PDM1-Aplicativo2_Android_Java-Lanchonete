@@ -8,15 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class PizzaActivity extends AppCompatActivity {
-    private EditText editTextPizza;
+public class BoloActivity extends AppCompatActivity {
+    private EditText editTextBolo;
     private Button btnCalcular;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pizza);
-        editTextPizza = findViewById(R.id.editTextPizza);
+        setContentView(R.layout.activity_bolo);
+        editTextBolo = findViewById(R.id.editTextBolo);
         btnCalcular = findViewById(R.id.btnCalcular);
 
         btnCalcular.setOnClickListener(new View.OnClickListener() {
@@ -26,10 +25,10 @@ public class PizzaActivity extends AppCompatActivity {
     }
 
     private void calcular(){
-        double quantidadePizza = Double.parseDouble(editTextPizza.getText().toString());
-        double total = quantidadePizza*20.00;
+        double quantidadeBolo = Double.parseDouble(editTextBolo.getText().toString());
+        double total = quantidadeBolo*8.00;
         Intent it = new Intent(getApplicationContext(), MainActivity.class);
-        it.putExtra("totalPizza", total);
+        it.putExtra("totalBolo", total);
         startActivity(it);
     }
 }

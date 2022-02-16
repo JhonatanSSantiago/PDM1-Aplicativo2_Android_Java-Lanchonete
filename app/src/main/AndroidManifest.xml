@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppLanchonete">
         <activity
+            android:name=".BoloActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".CafeActivity"
             android:exported="false" />
         <activity
