@@ -10,5 +10,6 @@
     <string name="EditTextDigiteQuantidade">Digite a Quantidade</string>
     <string name="btnCalcular">Calcular</string>
     <string name="textViewValorPizza">Valor da Unidade: R$ 20,00</string>
-    <string name="textViewValorBolo">Valor do Pedaço: 8,00</string>
+    <string name="textViewValorBolo">Valor do Pedaço: R$ 8,00</string>
+    <string name="textViewValorHumbuguer">Valor da Unidade: R$ 18,00</string>
 </resources>

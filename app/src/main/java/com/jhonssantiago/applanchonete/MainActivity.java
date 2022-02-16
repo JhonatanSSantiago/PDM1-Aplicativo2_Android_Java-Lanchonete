@@ -31,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
             double c = it.getDoubleExtra("totalCafe", 0);
             double p = it.getDoubleExtra("totalPizza", 0);
             double b = it.getDoubleExtra("totalBolo", 0);
+            double h = it.getDoubleExtra("totalHamb", 0);
             valores = valores+c;
             valores = valores+p;
             valores = valores+b;
+            valores = valores+h;
 
         }
 
@@ -49,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(it);
         }
         if(view.getId() == R.id.imgHamburguer){
-
+            Intent it = new Intent(getApplicationContext(), HamburguerActivity.class);
+            startActivity(it);
         }
         if(view.getId() == R.id.imgPizza){
             Intent it = new Intent(getApplicationContext(), PizzaActivity.class);
