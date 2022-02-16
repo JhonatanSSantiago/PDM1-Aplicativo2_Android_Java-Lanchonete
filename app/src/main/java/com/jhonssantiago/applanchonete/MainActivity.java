@@ -28,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
         Intent it = getIntent();
         if(it!=null){
-            double v = it.getDoubleExtra("total", 0);
-            valores = valores+v;
+            double c = it.getDoubleExtra("totalCafe", 0);
+            double p = it.getDoubleExtra("totalPizza", 0);
+            valores = valores+c;
+            valores = valores+p;
         }
 
     }
@@ -46,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
         if(view.getId() == R.id.imgPizza){
-
+            Intent it = new Intent(getApplicationContext(), PizzaActivity.class);
+            startActivity(it);
         }
         if(view.getId() == R.id.btnFinalizar){
             textViewResultado.setText(String.valueOf(valores));

@@ -6,29 +6,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
-    tools:context=".CafeActivity">
+    tools:context=".PizzaActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/cafe"/>
+        android:src="@drawable/pizza"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:background="@color/purple_200"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:text="@string/textViewValorCafe"/>
+        android:text="@string/textViewValorPizza"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/EditTextDigiteQuantidade"
-        android:id="@+id/editTextCafe"/>
+        android:id="@+id/editTextPizza"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnCalcular"
         android:id="@+id/btnCalcular"/>
-
 </LinearLayout>

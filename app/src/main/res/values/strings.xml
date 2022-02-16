@@ -6,7 +6,8 @@
     <string name="textViewHamburguer">Hambúrguer</string>
     <string name="textViewPizza">Pizza</string>
     <string name="BtnFinalizar">Finalizar</string>
-    <string name="textViewUnidadeCafe">Valor da Unidade: R$ 4,00</string>
+    <string name="textViewValorCafe">Valor da Unidade: R$ 4,00</string>
     <string name="EditTextDigiteQuantidade">Digite a Quantidade</string>
     <string name="btnCalcular">Calcular</string>
+    <string name="textViewValorPizza">Valor da Unidade: R$ 20,00</string>
 </resources>
